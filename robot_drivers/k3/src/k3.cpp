@@ -80,7 +80,9 @@ int main(int argc, char **argv){
     k3_ser.write("D,0,0\n");
 
 	ros::init(argc, argv, "k3");
-
+	
+	cout<<"hello ros";
+	
     ros::NodeHandle n;
 
    cmdVelSubscriber = n.subscribe("/robot_motors", 10, handlerVelocity);
